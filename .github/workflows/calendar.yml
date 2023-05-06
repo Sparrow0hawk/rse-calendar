@@ -1,0 +1,32 @@
+name: Generate calendar
+on: [push, pull_request]
+env:
+  DEFAULT_BRANCH: refs/heads/main
+
+jobs:
+  calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Info
+        run: |
+          echo ${{ github.ref }}
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: build
+        run: |
+          ./build.sh --edit-link=https://github.com/$GITHUB_REPOSITORY
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == env.DEFAULT_BRANCH }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out/
+          force_orphan: true

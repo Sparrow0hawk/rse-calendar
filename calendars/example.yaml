@@ -1,0 +1,27 @@
+name: Public events
+timezone: Europe/Helsinki
+
+events:
+  - summary: Test event
+    #id: test1
+    description: |
+      Line1
+      Line2
+      https://scicomp.aalto.fi
+    location: https://meet.jit.si/example
+    begin: 2021-09-30 12:00:00
+    duration: { minutes: 60 }
+
+  - summary: Test recurring event
+    #id: test2
+    description: |
+      Line1
+      Line2
+      https://scicomp.aalto.fi
+    location: https://meet.jit.si/example
+    begin: 2022-02-02 12:00:00
+    duration: { hours: 4 }
+    repeat:
+      interval: {days: 1}
+      until: 2022-02-04 12:00:00    # warning: date-only means 00:00,
+                                    # so end date is excluded.
