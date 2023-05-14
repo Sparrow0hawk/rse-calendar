@@ -13,27 +13,43 @@ layout: base
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
-    {% assign posts = site.posts %}
+    {% assign events = site.data.example.events %}
   {% endif %}
 
 
-  {%- if posts.size > 0 -%}
+  {%- if events.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
+      {%- for event in events -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ event.begin | date: date_format }}</span>
+        
+        {%- if event.url -%}
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+          <a class="post-link" href="{{ event.url | absolute_url }}">
+            {{ event.summary | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {%- else -%}
+        <h3>
+              {{ event.summary | escape }}
+        </h3>
         {%- endif -%}
+        {%- if site.show_excerpts -%}
+          {{ event.description }}
+        {%- endif -%}
+        <ul>
+            <li>
+                <strong>Location:</strong> {{ event.location | escape }}
+            </li>
+            <li>
+                <strong>Duration:</strong> {{ event.duration }}
+            </li>
+        </ul>
+
       </li>
       {%- endfor -%}
     </ul>
