@@ -9,6 +9,7 @@ layout: base
 
   {{ content }}
 
+  {%- include calendars.html -%}
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -18,9 +19,7 @@ layout: base
 
 
   {%- if events.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
+      <h2 class="post-list-heading">Upcoming Events</h2>
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
       {%- for event in events -%}
