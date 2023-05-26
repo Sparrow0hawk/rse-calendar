@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+Hello and welcome to the RSE calendar site! The one-stop-shop for all RSE event
+listings.
