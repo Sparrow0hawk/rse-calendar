@@ -1,5 +1,10 @@
 ---
 layout: base
+pagination: 
+  enabled: true
+  collection: events
+  sort_field: 'begins'
+  sort_reverse: false
 ---
 
 <div class="home">
@@ -11,65 +16,61 @@ layout: base
 
   {%- include calendars.html -%}
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign events = site.data.main.events %}
-    {% assign events = events | sort: 'begin' %}
+  {{ paginator.posts }}
+
+  <ul class="post-list">
+    <!-- 
+        Here is the main paginator logic called.
+        All calls to site.posts should be replaced by paginator.posts 
+    -->
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.summary | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+  {% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.first_page %}
+      <li class="previous">
+          <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">First</a>
+      </li>
+      {% endif %}
+
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li {% if page.url == trail.path %}class="selected"{% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+
+       {% if paginator.last_page %}
+      <li class="previous">
+          <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">Last</a>
+      </li>
+      {% endif %}
+  </ul>
   {% endif %}
 
-
-  {%- if events.size > 0 -%}
-      <h2 class="post-list-heading">Upcoming Events</h2>
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
-      {%- for event in events -%}
-      <li>
-        <span class="post-meta">{{ event.begin | date: date_format }}</span>
-        
-        {%- if event.url -%}
-        <h3>
-          <a class="post-link" href="{{ event.url | absolute_url }}">
-            {{ event.summary | escape }}
-          </a>
-        </h3>
-        {%- else -%}
-        <h3>
-              {{ event.summary | escape }}
-        </h3>
-        {%- endif -%}
-          {{ event.description }}
-        <ul>
-            <li>
-                <strong>Location:</strong> {{ event.location | escape }}
-            </li>
-            <li>
-                <strong>Duration:</strong> {% include duration.html duration = event.duration %}
-            </li>
-        </ul>
-
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
 
 </div>

@@ -29,6 +29,15 @@ website: "https://sparrow0hawk.github.io" # the base hostname & protocol for you
 #theme: minima
 plugins:
   - jekyll-feed
+
+gems:
+  - jekyll-paginate-v2
+
+collections:
+  events:
+    output: true
+    permalink: /events/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -37,12 +46,12 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  #   - .sass-cache/
+  #   - .jekyll-cache/
+  #   - gemfiles/
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -52,5 +61,5 @@ plugins:
 minima:
 # see
 # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
-# for format codes 
+# for format codes
 #  date_format: %d %B %Y %I:%M:%S %p
