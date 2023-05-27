@@ -1,0 +1,18 @@
+
+{% assign duration = include.duration %} 
+
+{%if duration.days %} 
+
+    {{duration.days}} days
+
+{% elsif duration.minutes %}
+
+    {% if duration.minutes < 60 %}
+
+        {{ duration.minutes }} minutes
+
+    {% else %}
+        1 hour
+    {% endif %}
+
+{% endif %}
