@@ -1,0 +1,110 @@
+name: RSE Events
+timezone: Europe/London
+
+events:
+  - summary: PyData London
+    #id: test1
+    description: |
+      SocRSE trustee Martin O'Reilly will be giving one of the PyData London
+      keynotes on 4 June 2023. It will be on the topic of RSEs and similar
+      roles, exploring the similarities and differences between these and
+      equivalent non-R(esearch) roles and how people can make the transition
+      from non-R roles to RSE roles and similar. 
+      https://london2023.pydata.org/cfp/talk/EML3U9/
+    location: Warwick
+    begin: 2023-06-04 09:00:00
+    duration: { minutes: 45 }
+
+  - summary: Surveying AI Safety Research Directions
+    #id: test1
+    description: |
+      Are you curious about what is going with AI in the media and all the
+      safety considerations and how one might be able to contribute? Then this
+      talk is for you! 
+
+      Title: Surveying AI Safety Research Directions
+      Speaker: Dan Hendrycks (Center for AI Safety)
+      Location: Zoom [https://ed-ac-uk.zoom.us/j/84463604528, passcode: DanHEdi23]
+      RSVP[free]: https://www.eventbrite.com/e/638192339467?aff=ai
+      Abstract: ML systems are rapidly increasing in size, are acquiring new
+      capabilities, and are increasingly deployed in high-stakes settings. In
+      this presentation, I'll give a whirlwind tour of directions in safety,
+      namely withstanding hazards (“Robustness”), identifying hazards
+      (“Monitoring”), reducing inherent ML system hazards (“Alignment”).
+
+    location: Zoom
+    begin: 2023-06-02 18:00:00
+    duration: { minutes: 60 }
+
+  - summary: "AI Beyond STEM: digital skills to unleash the power of data science and AI for all"
+    #id: test1
+    description: |
+      Hosted by SocRSE Trustee David Beavan, what are the AI skills (and RSEs
+      are part of that, right) needed in the big world outside of STEM? This
+      online-only panel event will bring together experts from diverse
+      backgrounds, including digital humanities, linguistics, zoology, and more,
+      to discuss the digital skills that are essential for future success in
+      their fields. We will explore the specific challenges and opportunities of
+      applying these technologies in non-STEM fields and gather ideas for next
+      steps in developing the necessary skills and knowledge. Then it is over to
+      you, the audience, to pose questions of the panel and share your
+      experiences. 
+      - Kaspar Beelen, Technical Lead, Digital Humanities, School of Advanced Studies
+      - Mathilde Daussy-Renaudin, Ph.D. Candidate, UCL/Oxford University
+      - Lydia France, Research Data Scientist, The Alan Turing Institute
+      - Katie Ireland, DigiLab, University of Georgia
+
+      Register -
+      https://livingwithmachines.ac.uk/event/ai-beyond-stem-digital-skills-to-unleash-the-power-of-data-science-and-ai-for-all/
+
+    location: Zoom
+    begin: 2023-06-06 18:00:00
+    duration: { minutes: 60 }
+
+  - summary: Byte-sized RSE session 8 - README files
+    #id: test1
+    description: |
+      In this final session of the first series of byte-sized RSE, we'll look at
+      the humble README file! Not a default and often ignored file in the root
+      of your project directory but a hugely important place for a range of
+      information that can make or break the success of your project - join us
+      on Tuesday 6th June to learn more.  
+
+      Registration now open - https://docs.google.com/forms/d/e/1FAIpQLScYbd6vIrL-Irm_DROs74OTEUkT_84PEv12s7UhiBjfuGhGbA/viewform
+    location: Zoom
+    begin: 2023-06-06 13:00:00
+    duration: { minutes: 60 }
+
+  - summary: Byte-sized RSE session 8 - README files
+    #id: test1
+    description: |
+      Our next Research Software Camp is taking place from 19 to 30 June 2023. Find out more about the Research Software Camp. 
+      The Software Sustainability Institute runs free online Research Software Camps
+      once a year over the course of two weeks. Each Camp focusses on introducing
+      basic research software skills and good practices, as well offering one.
+
+      https://www.software.ac.uk/events/2023-01-26-research-software-camp
+    location: Zoom
+    begin: 2023-06-19 09:00:00
+    duration: { days: 11 }
+
+  - summary: RSECon23
+    #id: test1
+    description: |
+      UK-based (at Swansea University) the SocRSE conference. 
+      Registrations - both in person and remote - are now open. Members of the
+      Society should have received a coupon code for a discount. Contact
+      membership@society-rse.org if you don't have it, but are a fully paid-up
+      member. Note: This discount also applies to people attending remotely.
+      It's worth joining the Society for the in person conference discount
+      alone!  
+      Conference registration is here: https://register.oxfordabstracts.com/event/4430. 
+      The Call for Volunteers remains open: https://rsecon23.society-rse.org/volunteers/.
+
+      Also, if you can, please help us find organisations willing to sponsor the
+      conference https://rsecon23.society-rse.org/sponsorship-packages-for-rsecon23/ -
+      perhaps the very organisation you work for?
+
+    location: Swansea University (Remote available)
+    begin: 2023-09-05 09:00:00
+    duration: { days: 2 }
