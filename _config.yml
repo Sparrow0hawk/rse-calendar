@@ -38,6 +38,23 @@ collections:
     output: true
     permalink: /events/:path/
 
+autopages:
+  enabled: true
+  tags:
+    layouts:
+      - autopage_collections_tags.html
+      # - autopage_tags.html
+    enabled: true
+  categories:
+    layouts:
+      - autopage_cat.html
+    enabled: true
+  collections:
+    enabled: true
+    slugify:
+      mode: "ascii"
+      cased: true # Causes B+W tag to show up as it is written on the terry-pratchet-diary-2017.md page and not lowercase
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
