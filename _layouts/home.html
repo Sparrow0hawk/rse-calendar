@@ -14,7 +14,8 @@ layout: base
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
-    {% assign events = site.data.example.events %}
+    {% assign events = site.data.main.events %}
+    {% assign events = events | sort: 'begin' %}
   {% endif %}
 
 
@@ -37,9 +38,7 @@ layout: base
               {{ event.summary | escape }}
         </h3>
         {%- endif -%}
-        {%- if site.show_excerpts -%}
           {{ event.description }}
-        {%- endif -%}
         <ul>
             <li>
                 <strong>Location:</strong> {{ event.location | escape }}
