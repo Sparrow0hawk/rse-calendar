@@ -1,12 +1,13 @@
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 import yaml
 import os
+import argparse
 import logging
 
 LOG_LEVEL = os.environ.get("LOGLEVEL")
 logging.basicConfig(level=LOG_LEVEL)
 
-def main():
+def main(override=False):
 
     with open("_data/main.yaml", "r") as open_file:
         try:
@@ -32,7 +33,7 @@ def main():
 
         output_path = os.path.join("_posts",filename + ".md")
 
-        if os.path.exists(output_path):
+        if (os.path.exists(output_path)) & (~override):
             logging.info(f"Skipping rendering {output_path}. It already exists.")
         else:
 
@@ -46,4 +47,8 @@ def main():
 
 if __name__ == '__main__':
 
-    main()
+    parser = argparse.ArgumentParser("RSE Events page post generator")
+    parser.add_argument("--override",action = "store_true")
+    args = parser.parse_args()
+
+    main(override=args.override)
