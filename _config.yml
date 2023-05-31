@@ -37,6 +37,11 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+
+# equivalent of permalink: /:categories/:year/:month/:day/:title/
+# https://jekyllrb.com/docs/permalinks/#global
+permalink: pretty
+
 exclude:
   - venv
   - out
