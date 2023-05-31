@@ -1,5 +1,7 @@
 ---
 layout: base
+pagination:
+  enabled: true
 ---
 
 <div class="home">
@@ -11,13 +13,11 @@ layout: base
 
   {%- include calendars.html -%}
 
-  {% if site.paginate %}
+  {% if site.pagination.enabled %}
     {% assign events = paginator.posts %}
   {% else %}
     {% assign events = site.data.main.events %}
   {% endif %}
-
-{% assign events = events | sort: 'date' %}
 
   {% assign curDate = site.time | date: '%s' %}
 
@@ -27,6 +27,7 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
       {%- for event in events -%}
+
       {% assign postStartDate = event.date | date: '%s' %}
         {% if postStartDate >= curDate %}
 
@@ -59,7 +60,7 @@ layout: base
       {%- endfor -%}
     </ul>
 
-    {% if site.paginate %}
+    {% if site.pagination.enabled %}
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
       {% if paginator.previous_page %}

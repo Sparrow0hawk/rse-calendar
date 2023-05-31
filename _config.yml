@@ -29,10 +29,13 @@ website: "https://sparrow0hawk.github.io" # the base hostname & protocol for you
 #theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
-paginate: 5
-paginate_path: "/page:num/"
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page:num/"
+  sort_field: "date"
 
 # equivalent of permalink: /:categories/:year/:month/:day/:title/
 # https://jekyllrb.com/docs/permalinks/#global
