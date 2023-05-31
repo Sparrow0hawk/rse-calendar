@@ -62,3 +62,5 @@ minima:
 # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
 # for format codes
 #  date_format: %d %B %Y %I:%M:%S %p
+
+future: true
