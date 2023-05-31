@@ -12,11 +12,14 @@ layout: base
   {%- include calendars.html -%}
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+    {% assign events = paginator.posts %}
   {% else %}
     {% assign events = site.data.main.events %}
-    {% assign events = events | sort: 'begin' %}
   {% endif %}
+
+{% assign events = events | sort: 'date' %}
+
+  {% assign curDate = site.time | date: '%s' %}
 
 
   {%- if events.size > 0 -%}
@@ -24,31 +27,35 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
       {%- for event in events -%}
-      <li>
-        <span class="post-meta">{{ event.begin | date: date_format }}</span>
-        
-        {%- if event.url -%}
-        <h3>
-          <a class="post-link" href="{{ event.url | absolute_url }}">
-            {{ event.summary | escape }}
-          </a>
-        </h3>
-        {%- else -%}
-        <h3>
-              {{ event.summary | escape }}
-        </h3>
-        {%- endif -%}
-          {{ event.description }}
-        <ul>
-            <li>
-                <strong>Location:</strong> {{ event.location | escape }}
-            </li>
-            <li>
-                <strong>Duration:</strong> {% include duration.html duration = event.duration %}
-            </li>
-        </ul>
+      {% assign postStartDate = event.date | date: '%s' %}
+        {% if postStartDate >= curDate %}
 
-      </li>
+          <li>
+            <span class="post-meta">{{ event.date | date: date_format }}</span>
+            
+            {%- if event.url -%}
+            <h3>
+              <a class="post-link" href="{{ event.url | absolute_url }}">
+                {{ event.summary | escape }}
+              </a>
+            </h3>
+            {%- else -%}
+            <h3>
+                  {{ event.summary | escape }}
+            </h3>
+            {%- endif -%}
+              {{ event.description }}
+            <ul>
+                <li>
+                    <strong>Location:</strong> {{ event.location | escape }}
+                </li>
+                <li>
+                    <strong>Duration:</strong> {% include duration.html duration = event.duration %}
+                </li>
+            </ul>
+
+          </li>
+        {%- endif -%}
       {%- endfor -%}
     </ul>
 
@@ -76,7 +83,8 @@ layout: base
       {% else %}
         <span>Next &raquo;</span>
       {% endif %}
-      </div>
+    </div>
+    {% endif %}
     {%- endif %}
 
   {%- endif -%}
