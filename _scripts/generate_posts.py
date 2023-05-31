@@ -1,6 +1,10 @@
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 import yaml
 import os
+import logging
+
+LOG_LEVEL = os.environ.get("LOGLEVEL")
+logging.basicConfig(level=LOG_LEVEL)
 
 def main():
 
@@ -23,17 +27,19 @@ def main():
 
     for event in data:
 
-        print(event)
-
         filename = str(event['begin'].strftime("%Y-%m-%d")) + "-" \
             + event['summary'].strip().replace(" ","_")
 
         output_path = os.path.join("_posts",filename + ".md")
 
-        rendered = template.render(event)
+        if os.path.exists(output_path):
+            logging.info(f"Skipping rendering {output_path}. It already exists.")
+        else:
 
-        with open(output_path, "w") as output_file:
-            output_file.write(rendered)
+            rendered = template.render(event)
+
+            with open(output_path, "w") as output_file:
+                output_file.write(rendered)
 
 
     return 
