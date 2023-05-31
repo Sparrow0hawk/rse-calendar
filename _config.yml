@@ -29,6 +29,15 @@ website: "https://sparrow0hawk.github.io" # the base hostname & protocol for you
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/page:num/"
+
+# equivalent of permalink: /:categories/:year/:month/:day/:title/
+# https://jekyllrb.com/docs/permalinks/#global
+permalink: pretty
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -37,11 +46,6 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-
-# equivalent of permalink: /:categories/:year/:month/:day/:title/
-# https://jekyllrb.com/docs/permalinks/#global
-permalink: pretty
-
 exclude:
   - venv
   - out
