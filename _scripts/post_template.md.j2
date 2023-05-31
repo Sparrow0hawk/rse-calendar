@@ -1,10 +1,13 @@
 ---
 layout: post
-title: {{ summary }}
-summary: {{ summary }}
+title: "{{ summary }}"
+summary: "{{ summary }}"
 description: |
-    {{ description }}
-location: {{ location }}
+{%- filter indent(width=2) %}
+{{ description }}
+{%- endfilter %}
+
+location: "{{ location }}"
 date: {{ begin }}
 duration: {{ duration }}
 ---
