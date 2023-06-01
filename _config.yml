@@ -29,6 +29,18 @@ website: "https://sparrow0hawk.github.io" # the base hostname & protocol for you
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page:num/"
+  sort_field: "date"
+
+# equivalent of permalink: /:categories/:year/:month/:day/:title/
+# https://jekyllrb.com/docs/permalinks/#global
+permalink: pretty
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -48,8 +60,14 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+header_pages:
+  - about.md
+  - subscribe.md
+
 minima:
 # see
 # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
 # for format codes
 #  date_format: %d %B %Y %I:%M:%S %p
+
+future: true

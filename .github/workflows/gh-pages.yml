@@ -3,7 +3,7 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main # or master before October 2020
+      - main
 
 jobs:
   github-pages:
@@ -36,14 +36,26 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-      - name: build
+      - name: build calendar files
         run: |
           ./build.sh --edit-link=https://github.com/$GITHUB_REPOSITORY
+          mv ./out/* assets/calendars/
+      - name: create posts
+        run: |
+          python _scripts/generate_posts.py
+          - uses: actions/cache@v2
+          with:
+            path: vendor/bundle
+            key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+            restore-keys: |
+              ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@master   # Choose any one of the Jekyll Actions
+        with:                                # Some relative inputs of your action
+          token: ${{ secrets.GITHUB_TOKEN }}
+          build_only: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          destination_dir: assets/calendars
-          keep_files: true
+          publish_dir: ./_site
         
