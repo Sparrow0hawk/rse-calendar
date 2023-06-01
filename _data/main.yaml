@@ -19,11 +19,11 @@ events:
       keynotes on 4 June 2023. It will be on the topic of RSEs and similar
       roles, exploring the similarities and differences between these and
       equivalent non-R(esearch) roles and how people can make the transition
-      from non-R roles to RSE roles and similar. 
-      https://london2023.pydata.org/cfp/talk/EML3U9/
+      from non-R roles to RSE roles and similar.
     location: Warwick
     begin: 2023-06-04 09:00:00
     duration: { minutes: 45 }
+    event_url: https://london2023.pydata.org/cfp/talk/EML3U9/
 
   - summary: Surveying AI Safety Research Directions
     #id: test1
@@ -45,6 +45,7 @@ events:
     location: Zoom
     begin: 2023-06-02 18:00:00
     duration: { minutes: 60 }
+    event_url: https://www.eventbrite.com/e/638192339467?aff=ai
 
   - summary: "AI Beyond STEM: digital skills to unleash the power of data science and AI for all"
     #id: test1
@@ -70,6 +71,7 @@ events:
     location: Zoom
     begin: 2023-06-06 18:00:00
     duration: { minutes: 60 }
+    event_url: https://livingwithmachines.ac.uk/event/ai-beyond-stem-digital-skills-to-unleash-the-power-of-data-science-and-ai-for-all/
 
   - summary: Byte-sized RSE session 8 - README files
     #id: test1
@@ -84,6 +86,7 @@ events:
     location: Zoom
     begin: 2023-06-06 13:00:00
     duration: { minutes: 60 }
+    event_url: https://docs.google.com/forms/d/e/1FAIpQLScYbd6vIrL-Irm_DROs74OTEUkT_84PEv12s7UhiBjfuGhGbA/viewform
 
   - summary: SSI Research Software Camp
     #id: test1
@@ -97,6 +100,7 @@ events:
     location: Zoom
     begin: 2023-06-19 09:00:00
     duration: { days: 11 }
+    event_url: https://www.software.ac.uk/events/2023-01-26-research-software-camp
 
   - summary: RSECon23
     #id: test1
@@ -118,3 +122,4 @@ events:
     location: Swansea University (Remote available)
     begin: 2023-09-05 09:00:00
     duration: { days: 2 }
+    event_url: https://rsecon23.society-rse.org/
