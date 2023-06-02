@@ -62,6 +62,7 @@ exclude:
 
 header_pages:
   - about.md
+  - contribute-event.md
   - subscribe.md
 
 minima:

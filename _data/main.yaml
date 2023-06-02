@@ -2,6 +2,16 @@ name: RSE Events
 timezone: Europe/London
 
 events:
+  # see below for a template event you can edit to add your own
+  # - summary: event title
+  #   description: |
+  #     A description of your event
+  #     over multiple
+  #      lines.
+  #   location: A venue
+  #   begin: YYYY-mm-DD HH:MM:SS
+  #   duration: { minutes: 45 }
+
   - summary: PyData London
     #id: test1
     description: |
