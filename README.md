@@ -28,6 +28,34 @@ event to the events section with the following YAML format:
 We'll do our best to get to your pull request and merge it so your event is
 shown on the website and in the calendar feed.
 
+## Contributing to the site
+
+First, thank you for wanting to contribute! We're very happy to review and
+accept contributions from others to improve this site.
+
+To get started you should:
+
+1. Make a [fork](https://github.com/Sparrow0hawk/git-calendar-test/fork) of this
+   repository
+2. Clone your fork locally
+3. To run the site locally you will need:
+    -  Ruby 2.7, I'd recommend installing this via
+       [rvm](https://github.com/rvm/rvm)
+    - Python 3
+4. Once Ruby is installed you can install the required Ruby Gems with `bundle
+   install`
+5. To run the Python steps locally you will need to install the required
+   packages. I'd recommend doing this with the following steps:
+   1. Create a virtual environment `python -m venv venv`
+   2. Activate the virtual environment `source venv/bin/activate`
+   3. Install the dependencies into the virtual environment `pip install -r
+      requirements.txt` 
+6. With Python setup steps completed to you can do the following steps to
+   generate the calendar files and to generate posts from the main data file
+7. To create the calendar files: `./build.sh` will run the git-calendar tool
+8. To create posts from the data file: `python _scripts/generate_posts.py`
+9. Now you've done all the prep you can run the site locally using `bundler exec
+   jekyll serve`
 
 ## Acknowledgements
 
