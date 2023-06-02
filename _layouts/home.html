@@ -34,17 +34,9 @@ pagination:
           <li>
             <span class="post-meta">{{ event.date | date: date_format }}</span>
             
-            {%- if event.url -%}
-            <h3>
-              <a class="post-link" href="{{ event.url | absolute_url }}">
-                {{ event.summary | escape }}
-              </a>
-            </h3>
-            {%- else -%}
             <h3>
                   {{ event.summary | escape }}
             </h3>
-            {%- endif -%}
               {{ event.description | newline_to_br }}
             <ul>
                 <li>
