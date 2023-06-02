@@ -1,6 +1,11 @@
-# Test site for RSE Calendar project
+# RSE Calendar project
 
-This is a test site for building a GitHub-powered shared calendar of RSE events. 
+This repository contains code for building a Jekyll site that shows upcoming
+events and builds and hosts .ics calendar files of those events that can be
+subscribed to. It was built with the idea of providing a central website
+containing research software engineering events in the UK that can be
+contributed to easily.
+
 
 ## Acknowledgements
 
