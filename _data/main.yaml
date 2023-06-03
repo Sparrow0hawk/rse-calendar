@@ -8,6 +8,7 @@ events:
   #     A description of your event
   #     over multiple
   #      lines.
+  #      With URLs wrapped in <www.example.com>
   #   location: A venue
   #   begin: YYYY-mm-DD HH:MM:SS
   #   duration: { minutes: 45 }
