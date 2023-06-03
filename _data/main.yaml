@@ -35,8 +35,8 @@ events:
 
       Title: Surveying AI Safety Research Directions
       Speaker: Dan Hendrycks (Center for AI Safety)
-      Location: Zoom [https://ed-ac-uk.zoom.us/j/84463604528, passcode: DanHEdi23]
-      RSVP[free]: https://www.eventbrite.com/e/638192339467?aff=ai
+      Location: Zoom [<https://ed-ac-uk.zoom.us/j/84463604528>, passcode: DanHEdi23]
+      RSVP[free]: <https://www.eventbrite.com/e/638192339467?aff=ai>
       Abstract: ML systems are rapidly increasing in size, are acquiring new
       capabilities, and are increasingly deployed in high-stakes settings. In
       this presentation, I'll give a whirlwind tour of directions in safety,
@@ -67,7 +67,7 @@ events:
       - Katie Ireland, DigiLab, University of Georgia
 
       Register -
-      https://livingwithmachines.ac.uk/event/ai-beyond-stem-digital-skills-to-unleash-the-power-of-data-science-and-ai-for-all/
+      <https://livingwithmachines.ac.uk/event/ai-beyond-stem-digital-skills-to-unleash-the-power-of-data-science-and-ai-for-all/>
 
     location: Zoom
     begin: 2023-06-06 18:00:00
@@ -83,7 +83,7 @@ events:
       information that can make or break the success of your project - join us
       on Tuesday 6th June to learn more.  
 
-      Registration now open - https://docs.google.com/forms/d/e/1FAIpQLScYbd6vIrL-Irm_DROs74OTEUkT_84PEv12s7UhiBjfuGhGbA/viewform
+      Registration now open - <https://docs.google.com/forms/d/e/1FAIpQLScYbd6vIrL-Irm_DROs74OTEUkT_84PEv12s7UhiBjfuGhGbA/viewform>
     location: Zoom
     begin: 2023-06-06 13:00:00
     duration: { minutes: 60 }
@@ -97,7 +97,7 @@ events:
       once a year over the course of two weeks. Each Camp focusses on introducing
       basic research software skills and good practices, as well offering one.
 
-      https://www.software.ac.uk/events/2023-01-26-research-software-camp
+      <https://www.software.ac.uk/events/2023-01-26-research-software-camp>
     location: Zoom
     begin: 2023-06-19 09:00:00
     duration: { days: 11 }
@@ -109,15 +109,15 @@ events:
       UK-based (at Swansea University) the SocRSE conference. 
       Registrations - both in person and remote - are now open. Members of the
       Society should have received a coupon code for a discount. Contact
-      membership@society-rse.org if you don't have it, but are a fully paid-up
+      <membership@society-rse.org> if you don't have it, but are a fully paid-up
       member. Note: This discount also applies to people attending remotely.
       It's worth joining the Society for the in person conference discount
       alone!
-      Conference registration is here: https://register.oxfordabstracts.com/event/4430. 
-      The Call for Volunteers remains open: https://rsecon23.society-rse.org/volunteers/.
+      Conference registration is here: <https://register.oxfordabstracts.com/event/4430>. 
+      The Call for Volunteers remains open: <https://rsecon23.society-rse.org/volunteers/>.
 
       Also, if you can, please help us find organisations willing to sponsor the
-      conference https://rsecon23.society-rse.org/sponsorship-packages-for-rsecon23/ -
+      conference <https://rsecon23.society-rse.org/sponsorship-packages-for-rsecon23/> -
       perhaps the very organisation you work for?
 
     location: Swansea University (Remote available)
