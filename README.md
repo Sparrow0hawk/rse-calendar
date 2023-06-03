@@ -18,6 +18,7 @@ event to the events section with the following YAML format:
     description: |
       A description of your event that can be
       over many lines
+      With URLs wrapped in <www.example.com> 
     location: A location (virtual or in real life)
     begin: YYYY-mm-DD HH:MM:SS
     # duration should contain a unit of time: minute, day, hour 
@@ -25,6 +26,13 @@ event to the events section with the following YAML format:
     duration: { minutes: 45 }
     event_url: www.example.com
 ```
+
+> **Note**
+> To ensure any extra URLs or email address in the description field are
+> clickable, wrap them in angle brackets to allow the
+> [Kramdown
+> processor](https://kramdown.gettalong.org/syntax.html#automatic-links) to
+> properly convert them into anchor elements.
 
 We'll do our best to get to your pull request and merge it so your event is
 shown on the website and in the calendar feed.
