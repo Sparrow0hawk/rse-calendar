@@ -11,6 +11,7 @@ events:
   #   location: A venue
   #   begin: YYYY-mm-DD HH:MM:SS
   #   duration: { minutes: 45 }
+  #   event_url: some_url
 
   - summary: PyData London
     #id: test1
