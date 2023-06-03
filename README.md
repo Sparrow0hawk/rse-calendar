@@ -23,6 +23,7 @@ event to the events section with the following YAML format:
     # duration should contain a unit of time: minute, day, hour 
     # and an numeric value
     duration: { minutes: 45 }
+    event_url: www.example.com
 ```
 
 We'll do our best to get to your pull request and merge it so your event is
