@@ -45,7 +45,7 @@ pagination:
                   {{ event.summary | escape }}
             </h3>
             {% endif %}
-              {{ event.description | newline_to_br }}
+              {{ event.description | markdownify }}
             <ul>
                 <li>
                     <strong>Location:</strong> {{ event.location | escape }}
