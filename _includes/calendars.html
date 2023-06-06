@@ -1,13 +1,24 @@
 <h2>Subscribe to these calendars</h2>
 
 <p>
-    Use the links below to subscribe to this calendar using .ics files.
+  Use the links below to subscribe to this calendar using .ics files.
 </p>
 
 <ul>
   <li>
-
     <a href="{{site.baseurl}}/assets/calendars/main.ics">RSE events</a>
-    
   </li>
+
+  {% for file in site.static_files %}
+  {% if file.path contains 'calendars/' %}
+  {% assign name_size = file.name | split: "." | size %}
+  {% if name_size >= 3 %}
+  <li>
+
+    <a href="{{site.baseurl}}/assets/{{ file.path }}">RSE events - {{ file.name | split: "." | slice: 1}}</a>
+
+  </li>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </ul>
