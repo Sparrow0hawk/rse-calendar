@@ -1,6 +1,7 @@
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 import yaml
 import os
+import datetime
 import argparse
 import logging
 
@@ -26,21 +27,25 @@ def main(override=False):
 
     template = env.get_template("post_template.md.j2")
 
+    today = datetime.datetime.today()
+
     for event in data:
 
-        filename = str(event['begin'].strftime("%Y-%m-%d")) + "-" \
-            + event['summary'].strip().replace(" ","_")
+        if event['begin'] >= today:
 
-        output_path = os.path.join("_posts",filename + ".md")
+            filename = str(event['begin'].strftime("%Y-%m-%d")) + "-" \
+                + event['summary'].strip().replace(" ","_")
 
-        if (os.path.exists(output_path)) & (~override):
-            logging.info(f"Skipping rendering {output_path}. It already exists.")
-        else:
+            output_path = os.path.join("_posts",filename + ".md")
 
-            rendered = template.render(event)
+            if (os.path.exists(output_path)) & (~override):
+                logging.info(f"Skipping rendering {output_path}. It already exists.")
+            else:
 
-            with open(output_path, "w") as output_file:
-                output_file.write(rendered)
+                rendered = template.render(event)
+
+                with open(output_path, "w") as output_file:
+                    output_file.write(rendered)
 
 
     return 
