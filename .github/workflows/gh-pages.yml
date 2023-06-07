@@ -25,7 +25,7 @@ jobs:
       - name: build calendar files
         run: |
           ./build.sh --edit-link=https://github.com/$GITHUB_REPOSITORY
-          mv ./out/* assets/calendars/
+          mv ./out/*.ics assets/calendars/
       - name: create posts
         run: |
           python _scripts/generate_posts.py
