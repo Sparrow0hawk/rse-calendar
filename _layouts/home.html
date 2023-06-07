@@ -32,7 +32,7 @@ pagination:
         {% if postStartDate >= curDate %}
 
           <li>
-            <span class="post-meta">{{ event.date | date: date_format }}</span>
+            <span class="post-meta">{{ event.date | date: date_format }} Europe/London</span>
             
             {%- if event.event_url -%}
             <h3>
