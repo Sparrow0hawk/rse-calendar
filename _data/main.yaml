@@ -138,6 +138,6 @@ events:
       I will consider which types of software metric might benefit researcher-developers and research software engineers working in computational science and engineering. Can useful metrics be identified by considering the differences in the way that software is developed these fields?
 
     location: The talk will be held online. The connection details will be posted on a variety on channels shortly before the event (see <https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html> for a list).
-    begin: 2023-06-27 11:00:00 (CEST)
+    begin: 2023-06-27 10:00:00
     duration: { hours: 1 }
     event_url: https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html
