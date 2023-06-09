@@ -125,3 +125,19 @@ events:
     begin: 2023-09-05 09:00:00
     duration: { days: 2 }
     event_url: https://rsecon23.society-rse.org/
+
+  - summary: "18th HiRSE Seminar - Neil Chue Hong: Can Software Metrics Improve Software Quality?"
+    #id: test1
+    description: |
+      Software quality in computational science and engineering can be interpreted in two ways: does the software implement the algorithm or simulate the phenomenon as expected, and does it perform as expected i.e. does it scale, is it maintainable, is it secure?
+
+      Software metrics are the degree to which a software system possesses some relevant property. Many software metrics are defined as quantitative measurements based on the analysis of source code. Others, such as those being developed by the CHAOSS initiative, focus on measuring the ability of a project to deliver software that meets various criteria, such as community health or development efficiency.
+
+      A key question is how useful software metrics are in improving software quality when applied to development in computational science and engineering, which can differ from software engineering in other areas because of evolving or unclear requirements, deployment to large-scale systems and architectures, and focus on performance.
+
+      I will consider which types of software metric might benefit researcher-developers and research software engineers working in computational science and engineering. Can useful metrics be identified by considering the differences in the way that software is developed these fields?
+
+    location: The talk will be held online. The connection details will be posted on a variety on channels shortly before the event (see <https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html> for a list).
+    begin: 2023-06-27 10:00:00
+    duration: { hours: 1 }
+    event_url: https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html
