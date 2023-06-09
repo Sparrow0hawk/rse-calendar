@@ -48,7 +48,7 @@ pagination:
               {{ event.description | markdownify }}
             <ul>
                 <li>
-                    <strong>Location:</strong> {{ event.location | escape }}
+                    <strong>Location:</strong> {{ event.location | markdownify }}
                 </li>
                 <li>
                     <strong>Duration:</strong> {% include duration.html duration = event.duration %}
