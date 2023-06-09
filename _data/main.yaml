@@ -126,7 +126,7 @@ events:
     duration: { days: 2 }
     event_url: https://rsecon23.society-rse.org/
 
-  - summary: 18th HiRSE Seminar - Neil Chue Hong: Can Software Metrics Improve Software Quality?
+  - summary: "18th HiRSE Seminar - Neil Chue Hong: Can Software Metrics Improve Software Quality?"
     #id: test1
     description: |
       Software quality in computational science and engineering can be interpreted in two ways: does the software implement the algorithm or simulate the phenomenon as expected, and does it perform as expected i.e. does it scale, is it maintainable, is it secure?
