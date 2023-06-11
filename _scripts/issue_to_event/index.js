@@ -22,8 +22,6 @@ try {
         // add a new event by editing the events prop
         events_yaml.addIn(["events"], events_yaml.createNode(payload_json))
 
-        console.log(events_yaml.toJSON())
-
         // Convert the merged object to YAML
         const merged_events = yaml.stringify(events_yaml);
 
