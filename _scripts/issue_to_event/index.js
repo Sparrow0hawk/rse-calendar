@@ -23,7 +23,7 @@ try {
         events_yaml.addIn(["events"], events_yaml.createNode(payload_json))
 
         // Convert the merged object to YAML
-        const merged_events = yaml.stringify(events_yaml);
+        const merged_events = yaml.stringify(events_yaml, options = { lineWidth: 0 });
 
         // Write the merged YAML string back to the file
         fs.writeFileSync(file_path, merged_events);
