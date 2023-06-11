@@ -16,7 +16,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: _scripts/issue_to_event/package-lock.json
       - run: |
-          npm install
+          npm install --prefix _scripts/issue_to_events
     
       - name: Parse Issue Body
         uses: peter-murray/issue-body-parser-action@v1
