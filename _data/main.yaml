@@ -141,3 +141,14 @@ events:
     begin: 2023-06-27 10:00:00
     duration: { hours: 1 }
     event_url: https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html
+  - summary: Test event 2
+    description: |
+      A description of your event
+      over multiple
+      lines.
+      With URLs wrapped in <www.example.com>
+    location: A venue
+    begin: 2023-06-11 19:00:00
+    duration:
+      minutes: 45
+    event_url: example.com
