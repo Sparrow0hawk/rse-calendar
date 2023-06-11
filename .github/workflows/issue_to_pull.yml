@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
+          cache-dependency-path: _scripts/issue_to_event/package-lock.json
       - run: |
           npm install _scripts/issue_to_event
     
