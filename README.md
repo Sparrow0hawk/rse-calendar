@@ -21,6 +21,11 @@ without touching any code!
 
 This pull request will need to be approved before your event appears on the website.
 
+> **Note**
+> Your Pull request will be closed and immediately re-opened to trigger the
+> test-build validation action. This is due to limitations with how GitHub
+> actions can trigger other GitHub actions.
+
 ### Submit as a Pull Request
 
 To add an event to the calendar you should suggest a [pull
