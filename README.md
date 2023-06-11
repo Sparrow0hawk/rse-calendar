@@ -8,6 +8,21 @@ contributed to easily.
 
 ## Contributing an event to the calendar
 
+There are 2 main ways to contribute an event to the calendar.
+
+### Submit using GitHub Issues
+
+You can use the [Add event GitHub Issue
+template](https://github.com/Sparrow0hawk/rse-calendar/issues/new?assignees=&labels=add-event&projects=&template=add-an-event-template.md&title=%5BEVENT+TITLE%5D)
+to submit an issue where you complete the yaml block with details of your event
+to trigger a GitHub action workflow that automatically submits a pull request
+with your event details to the project. Allowing you to contribute an event
+without touching any code!
+
+This pull request will need to be approved before your event appears on the website.
+
+### Submit as a Pull Request
+
 To add an event to the calendar you should suggest a [pull
 request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
 to the repository that updated the [main data file](./_data/main.yaml) to add a new
