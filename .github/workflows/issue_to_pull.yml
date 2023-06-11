@@ -1,0 +1,43 @@
+name: Add an event by submitting an issue
+
+on:
+  issues:
+    types: [labeled]
+jobs:
+  extract-issue-body:
+    if: github.event.label.name == 'add-event'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: |
+          npm install _scripts/issue_to_event
+    
+      - name: Parse Issue Body
+        uses: peter-murray/issue-body-parser-action@v1
+        id: issue_body_parser
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            # This is assuming that you are triggering off the issue, otherwise you will need to know the issue number
+            issue_id: ${{ github.event.issue.number }}
+            payload: yaml
+
+      - name: Append data to file
+        env:
+          DATA: ${{ steps.issue_body_parser.outputs.payload }}
+        run: |
+          node _scripts/issue_to_event/index.js "$DATA"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'Add new event - ${{ github.event.issue.title }}'
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          branch: add-event-${{ github.event.issue.number }}
+          delete-branch: true
+          title: '[AUTO] Add event ${{ github.event.issue.title }}'
