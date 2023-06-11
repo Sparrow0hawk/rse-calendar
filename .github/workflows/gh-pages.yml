@@ -28,7 +28,7 @@ jobs:
           mv ./out/*.ics assets/calendars/
       - name: create posts
         run: |
-          python _scripts/generate_posts.py
+          python _scripts/generate_posts/generate_posts.py
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
