@@ -12,14 +12,14 @@ assignees: ''
 I want to add the following event to the RSE calendar:
 
 ```yaml
-  - summary: event title
-    description: |
-      A description of your event
-      over multiple
-       lines.
-       With URLs wrapped in <www.example.com>
-    location: A venue
-    begin: YYYY-mm-DD HH:MM:SS
-    duration: { minutes: 45 }
-    event_url: some_url
+summary: event title
+description: |
+    A description of your event
+    over multiple
+    lines.
+    With URLs wrapped in <www.example.com>
+location: A venue
+begin: YYYY-mm-DD HH:MM:SS
+duration: { minutes: 45 }
+event_url: some_url
 ```

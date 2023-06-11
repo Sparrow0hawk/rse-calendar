@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+            ssh-key: ${{ secrets.DEPLOY_KEY }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16
