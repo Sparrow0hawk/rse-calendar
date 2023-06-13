@@ -7,12 +7,7 @@
 
 {% elsif duration.minutes %}
 
-    {% if duration.minutes < 60 %}
-
-        {{ duration.minutes }} minutes
-    {% else %}
-        1 hour
-    {% endif %}
+    {{ duration.minutes }} minutes
 
 {% elsif duration.hours %}
 
