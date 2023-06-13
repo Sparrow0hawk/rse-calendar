@@ -141,3 +141,20 @@ events:
     begin: 2023-06-27 10:00:00
     duration: { hours: 1 }
     event_url: https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html
+  - summary: Educating Engineers for Safe AI Workshop (Cambridge)
+    description: |
+      The Alan Turing Institute, Edinburgh, Newcastle, Cambridge and UCL Universities are organising a series of workshops to discuss Educating Engineers for Safe AI.
+
+      We are seeking participants in this workshop series who are:
+
+      - AI Engineers, Data Scientists, Systems Engineers, ML-Ops, Research Software Engineers, Site Reliability Engineers and more, working in the implementation of AI systems OR
+      - Academics and other experts working in areas related to Safe, Ethical, Reliable and Trustworthy Machine Learning and Artificial Intelligence OR
+      - Academics and other experts working in professional education, CPD, and related areas, interested in developing materials related to safe AI for professional audiences.
+      The workshops consist of two regional nonresidential satellite workshops in Cambridge (4th July) and in Edinburgh (29th June), and a final residential workshop in Newcastle on the 15th and 16th August.
+
+      The purpose of the workshop series is to develop a roadmap toward the creation of a syllabus and set of professional education materials, targeted at software and systems engineers, so that they can be empowered to champion the creation of safe, ethical and trustworthy AI in their workplaces. Developers and engineers, appropriately empowered and skilled, are uniquely placed to ensure that the systems they build are done so according to emerging ethical best practice. These materials will become part of The Turing Way project.
+    location: Downing College, Regent Street, Cambridge CB2 1DQ
+    begin: 2023-07-04 09:30:00
+    duration:
+      minutes: 390
+    event_url: https://www.eventbrite.co.uk/e/educating-engineers-for-safe-ai-tickets-646994627347
