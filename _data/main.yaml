@@ -158,3 +158,10 @@ events:
     duration:
       minutes: 390
     event_url: https://www.eventbrite.co.uk/e/educating-engineers-for-safe-ai-tickets-646994627347
+  - summary: un-deRSE23 - Unconference for Research Software Engineering in Germany
+    description: First ever unconference for Research Software Engineering in Germany
+    location: "[Dornburger Schlösser](https://www.jenaconvention.de/location/altes-schloss-dornburg/), Jena, Germany"
+    begin: 2023-09-26 11:30
+    duration:
+      days: 3
+    event_url: https://un-derse23.sciencesconf.org/
