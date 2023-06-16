@@ -29,7 +29,11 @@ def main(override=False):
     today = datetime.datetime.today()
 
     for event in data:
-        if event["begin"] >= today:
+
+        # calculate a post end date 
+        postEndDate = event["begin"] + datetime.timedelta(**event["duration"])
+
+        if postEndDate >= today:
             filename = (
                 str(event["begin"].strftime("%Y-%m-%d"))
                 + "-"
