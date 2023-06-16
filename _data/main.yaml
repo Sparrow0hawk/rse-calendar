@@ -165,3 +165,27 @@ events:
     duration:
       days: 3
     event_url: https://un-derse23.sciencesconf.org/
+  - summary: UCL Technical Social - Wed Jun 21 2023 - Jörg Saßmannshausen
+    description: |
+      How to install high-performant software on a High Performance Cluster?
+
+      Software installation on a High Performance Cluster (HPC) is different from the usual software installation on a desktop 
+      computer.In order to get the best performance out of the very expensive hardware, it is best to compile software from source, 
+      rather than using pre-compiled binaries. This sounds often easier than it actually is. One good example is Basic Linear Algebra 
+      Subprograms (BLAS) [1]: A generic installation will only deliver a very low performance. Optimising the compile process will 
+      deliver more performance. However, with the sheer amount of different CPUs around, testing it for each new build with a new 
+      compiler is time consuming.
+
+      The solution here is to fall back what others have done, improve on it if possible and contribute back to the community.
+
+      One such an example is EasyBuild [2]: software which is installing high-performant scientific software on HPC clusters 
+      automatically.
+
+      The talk will take you through an often a bit personally journey of scientific software installation, without too much of technical 
+      jargon. It is aimed for scientists who are installing software, or write their own code. Equally, researchers who are more 
+      experienced in software installation might learn something new as well.
+    location: Malet Place Engineering Building 1.04 Malet Place Engineering Building 1.04 London WC1E 7JE
+    begin: 2023-07-21 16:00:00
+    duration:
+      minutes: 60
+    event_url: https://www.eventbrite.co.uk/e/arc-technical-social-wed-jun-21-2023-jorg-samannshausen-tickets-651818144617
