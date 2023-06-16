@@ -17,9 +17,11 @@ description: |
     A description of your event
     over multiple
     lines.
-    With URLs wrapped in <www.example.com>
+    These should all be indented and have the same 
+    indentation level as the first line.
+    Any URLs should be wrapped in brackets i.e. <www.example.com>
 location: A venue
 begin: YYYY-mm-DD HH:MM:SS
 duration: { minutes: 45 }
-event_url: some_url
+event_url: A URL not wrapped in brackets linking to your event page
 ```
