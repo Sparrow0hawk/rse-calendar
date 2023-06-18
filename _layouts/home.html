@@ -28,25 +28,6 @@ pagination:
       {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
       {%- for event in events -%}
 
-      {% if event.duration.day %} 
-
-      {% assign postDuration = event.duration.day | times: 86400 %}
-
-      {% elsif event.duration.hours %} 
-
-      {% assign postDuration = event.duration.hours | times: 3600 %}
-
-      {% else %} 
-
-      {% assign postDuration = event.duration.minutes | times: 60 %}
-
-      {% endif %}
-
-      {% assign postStartDate = event.date | date: '%s' %}
-
-      {% assign postEndDate = postStartDate | plus: postDuration %}
-        {% if postEndDate >= curDate %}
-
           <li>
             <span class="post-meta">{{ event.date | date: date_format }} Europe/London</span>
             
@@ -72,7 +53,6 @@ pagination:
             </ul>
 
           </li>
-        {%- endif -%}
       {%- endfor -%}
     </ul>
 
