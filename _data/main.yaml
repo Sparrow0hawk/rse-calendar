@@ -198,3 +198,12 @@ events:
     duration:
       minutes: 60
     event_url: https://us06web.zoom.us/meeting/register/tZAvfuGspjotE9FXsM1-fV1lDsmImi_9ns4F#/registration
+  - summary: RSE Asia Community Call (September 2023)
+    description: |
+      An opportunity for people who work with or manage (research) software to meet and discuss challenges and solutions, share skills, opportunities, and resources.
+      Join this call if you: want to learn about research software engineering, develop software for research, mostly do coding or software developing in a research group, are a doctoral or postdoctoral researcher who mostly develops software, have build software while doing research, and/or want to join the emerging research software engineering community in Asia.
+    location: Online
+    begin: 2023-09-21 08:00:00
+    duration:
+      minutes: 60
+    event_url: https://us06web.zoom.us/meeting/register/tZEufu2urD8tGtwqEoENHz6G-SpbCXXhrY0O#/registration
