@@ -28,9 +28,6 @@ pagination:
       {%- assign date_format = site.minima.date_format | default: "%d %B %Y %I:%M:%S %p"  -%}
       {%- for event in events -%}
 
-      {% assign postStartDate = event.date | date: '%s' %}
-        {% if postStartDate >= curDate %}
-
           <li>
             <span class="post-meta">{{ event.date | date: date_format }} Europe/London</span>
             
@@ -56,7 +53,6 @@ pagination:
             </ul>
 
           </li>
-        {%- endif -%}
       {%- endfor -%}
     </ul>
 
