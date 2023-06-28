@@ -4,7 +4,16 @@ title: Add an Event
 permalink: /add-event/
 ---
 
-There are 2 main ways to contribute an event to the calendar.
+The calendar site is designed to show events only in one timezone (currently
+[Europe/London](https://www.zeitverschiebung.net/en/timezone/europe--london)).
+The ICalendar files built as part of the site deployment do support multiple
+timezones but when contributing an event it's important to ensure you contribute
+your events with times adjusted for [Europe/London](https://www.zeitverschiebung.net/en/timezone/europe--london).
+
+There are 2 main ways to contribute an event to the calendar:
+
+- [Using GitHub Issues Template](#submit-using-github-issues)
+- [Submit as a pull request](#submit-an-event-via-a-pull-request)
 
 ### Submit using GitHub Issues
 
@@ -39,7 +48,7 @@ When submitting using the GitHub issue you should ensure:
               amazing!
   ```
 
-## Submit an event via a pull request
+### Submit an event via a pull request
 
 To add an event to the calendar you can suggest a [pull
 request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
