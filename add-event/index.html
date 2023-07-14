@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/rse-calendar/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/rse-calendar/feed.xml" title="RSE Events" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/rse-calendar/">RSE Events</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/rse-calendar/about/">About</a><a class="page-link" href="/rse-calendar/add-event/">Add an Event</a><a class="page-link" href="/rse-calendar/subscribe/">How to subscribe</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Add an Event</h1>
+  </header>
+
+  <div class="post-content">
+    <p>The calendar site is designed to show events only in one timezone (currently
+<a href="https://www.zeitverschiebung.net/en/timezone/europe--london">Europe/London</a>).
+The ICalendar files built as part of the site deployment do support multiple
+timezones but when contributing an event it’s important to ensure you contribute
+your events with times adjusted for <a href="https://www.zeitverschiebung.net/en/timezone/europe--london">Europe/London</a>.</p>
+
+<p>There are 2 main ways to contribute an event to the calendar:</p>
+
+<ul>
+  <li><a href="#submit-using-github-issues">Using GitHub Issues Template</a></li>
+  <li><a href="#submit-an-event-via-a-pull-request">Submit as a pull request</a></li>
+</ul>
+
+<h3 id="submit-using-github-issues">Submit using GitHub Issues</h3>
+
+<p>You can use the <a href="https://github.com/Sparrow0hawk/rse-calendar/issues/new?assignees=&amp;labels=add-event&amp;projects=&amp;template=add-an-event-template.md&amp;title=%5BEVENT+TITLE%5D">Add event GitHub Issue
+template</a>
+to submit an issue that includes a yaml block with details of your event.
+This will trigger a GitHub action workflow that automatically submits a pull request
+with your event details to the project. Allowing you to contribute an event
+without touching any code!</p>
+
+<p>When submitting using the GitHub issue you should ensure:</p>
+
+<ul>
+  <li>
+    <p>If any field you enter contains a colon, you should wrap the field in
+quotation marks to avoid the YAML parser interpreting the colon as a new key
+i.e.</p>
+
+    <p>❌ <code class="language-plaintext highlighter-rouge">event_url: https://www.example.com</code></p>
+
+    <p>✅ <code class="language-plaintext highlighter-rouge">event_url: "https://www.example.com"</code></p>
+  </li>
+  <li>
+    <p>If you enter a field over multiple lines like the description field make sure
+the indentation level is the same across all lines
+i.e.</p>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">❌  description</span><span class="pi">:</span> <span class="pi">|</span>
+            <span class="s">My fantastic event</span>
+          <span class="s">is going to be</span>
+        <span class="s">amazing!</span>
+
+<span class="na">✅ description</span><span class="pi">:</span> <span class="pi">|</span>
+            <span class="s">My fantastic event</span>
+            <span class="s">is going to be</span>
+            <span class="s">amazing!</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="submit-an-event-via-a-pull-request">Submit an event via a pull request</h3>
+
+<p>To add an event to the calendar you can suggest a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui">pull
+request</a>
+to the repository that updates the <a href="https://github.com/Sparrow0hawk/git-calendar-test/edit/main/_data/main.yaml">main data file</a> to add a new
+event to the events section with the following YAML format:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">summary</span><span class="pi">:</span> <span class="s">title of your event</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="s">A description of your event</span>
+    <span class="s">over multiple</span>
+    <span class="s">lines.</span>
+    <span class="s">These should all be indented and have the same </span>
+    <span class="s">indentation level as the first line.</span>
+    <span class="s">Any URLs should be wrapped in brackets i.e. &lt;www.example.com&gt;</span>
+  <span class="na">location</span><span class="pi">:</span> <span class="s">A location (virtual or in real life)</span>
+  <span class="na">begin</span><span class="pi">:</span> <span class="s">YYYY-mm-DD HH:MM:SS</span>
+  <span class="c1"># duration should contain a unit of time: minute, day, hour </span>
+  <span class="c1"># and an numeric value</span>
+  <span class="na">duration</span><span class="pi">:</span> <span class="pi">{</span> <span class="nv">minutes</span><span class="pi">:</span> <span class="nv">45</span> <span class="pi">}</span>
+  <span class="na">event_url</span><span class="pi">:</span> <span class="s">A URL not wrapped in brackets linking to your event page</span> 
+</code></pre></div></div>
+
+<p>We’ll do our best to get to your pull request and merge it so your event is
+shown on the website and in the calendar feed.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/rse-calendar/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/rse-calendar/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/rse-calendar/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome to the GitHub-powered RSE Events site!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/sparrow0hawk/rse-calendar" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/rse-calendar/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

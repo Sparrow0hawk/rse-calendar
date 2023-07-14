@@ -1,0 +1,306 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py 0.8.0-dev0 - http://git.io/lLljaA
+BEGIN:VTIMEZONE
+TZID:/ics.py/2020.1/Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+RDATE:19700329T010000
+TZNAME:BST
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+RDATE:19701025T020000
+TZNAME:GMT
+END:STANDARD
+LAST-MODIFIED:20200620T153818Z
+X-LIC-LOCATION:Europe/London
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230604T090000
+DURATION:PT45M
+SUMMARY:PyData London
+UID:8756ddac-d60c-4d5e-ad22-03c857bb2508@8756.org
+DESCRIPTION:SocRSE trustee Martin O'Reilly will be giving one of the PyData
+  London\nkeynotes on 4 June 2023. It will be on the topic of RSEs and 
+ similar\nroles\, exploring the similarities and differences between these 
+ and\nequivalent non-R(esearch) roles and how people can make the 
+ transition\nfrom non-R roles to RSE roles and similar.
+LOCATION:Warwick
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230602T180000
+DURATION:PT1H
+SUMMARY:Surveying AI Safety Research Directions
+UID:5b425b13-1af2-45c0-8c65-cdee80117a54@5b42.org
+DESCRIPTION:Are you curious about what is going with AI in the media and 
+ all the\nsafety considerations and how one might be able to contribute? 
+ Then this\ntalk is for you! \n\nTitle: Surveying AI Safety Research 
+ Directions\nSpeaker: Dan Hendrycks (Center for AI Safety)\nLocation: Zoom 
+ [<https://ed-ac-uk.zoom.us/j/84463604528>\, passcode: 
+ DanHEdi23]\nRSVP[free]: 
+ <https://www.eventbrite.com/e/638192339467?aff=ai>\nAbstract: ML systems 
+ are rapidly increasing in size\, are acquiring new\ncapabilities\, and are
+  increasingly deployed in high-stakes settings. In\nthis presentation\, 
+ I'll give a whirlwind tour of directions in safety\,\nnamely withstanding 
+ hazards (“Robustness”)\, identifying hazards\n(“Monitoring”)\, reducing 
+ inherent ML system hazards (“Alignment”).
+LOCATION:Zoom
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230606T180000
+DURATION:PT1H
+SUMMARY:AI Beyond STEM: digital skills to unleash the power of data science
+  and AI for all
+UID:28854f48-ee7d-4cfd-90a8-76b9d8b4b2cc@2885.org
+DESCRIPTION:Hosted by SocRSE Trustee David Beavan\, what are the AI skills 
+ (and RSEs\nare part of that\, right) needed in the big world outside of 
+ STEM? This\nonline-only panel event will bring together experts from 
+ diverse\nbackgrounds\, including digital humanities\, linguistics\, 
+ zoology\, and more\,\nto discuss the digital skills that are essential for
+  future success in\ntheir fields. We will explore the specific challenges 
+ and opportunities of\napplying these technologies in non-STEM fields and 
+ gather ideas for next\nsteps in developing the necessary skills and 
+ knowledge. Then it is over to\nyou\, the audience\, to pose questions of 
+ the panel and share your\nexperiences. \n- Kaspar Beelen\, Technical 
+ Lead\, Digital Humanities\, School of Advanced Studies\n- Mathilde Daussy-
+ Renaudin\, Ph.D. Candidate\, UCL/Oxford University\n- Lydia France\, 
+ Research Data Scientist\, The Alan Turing Institute\n- Katie Ireland\, 
+ DigiLab\, University of Georgia\n\nRegister 
+ -\n<https://livingwithmachines.ac.uk/event/ai-beyond-stem-digital-skills-
+ to-unleash-the-power-of-data-science-and-ai-for-all/>
+LOCATION:Zoom
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230606T130000
+DURATION:PT1H
+SUMMARY:Byte-sized RSE session 8 - README files
+UID:5913d852-2e14-443b-83e1-b833c85c104f@5913.org
+DESCRIPTION:In this final session of the first series of byte-sized RSE\, 
+ we'll look at\nthe humble README file! Not a default and often ignored 
+ file in the root\nof your project directory but a hugely important place 
+ for a range of\ninformation that can make or break the success of your 
+ project - join us\non Tuesday 6th June to learn more.  \n\nRegistration 
+ now open - <https://docs.google.com/forms/d/e/1FAIpQLScYbd6vIrL-
+ Irm_DROs74OTEUkT_84PEv12s7UhiBjfuGhGbA/viewform>
+LOCATION:Zoom
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230619T090000
+DURATION:P11D
+SUMMARY:SSI Research Software Camp
+UID:cf4e6b3c-0e7c-4c5e-b2dd-aafdd79efa0f@cf4e.org
+DESCRIPTION:Our next Research Software Camp is taking place from 19 to 30 
+ June 2023. Find out more about the Research Software Camp. \nThe Software 
+ Sustainability Institute runs free online Research Software Camps\nonce a 
+ year over the course of two weeks. Each Camp focusses on 
+ introducing\nbasic research software skills and good practices\, as well 
+ offering one.\n\n<https://www.software.ac.uk/events/2023-01-26-research-
+ software-camp>
+LOCATION:Zoom
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230905T090000
+DURATION:P2D
+SUMMARY:RSECon23
+UID:7f2fa36c-d60c-4169-a663-2b20a200e773@7f2f.org
+DESCRIPTION:UK-based (at Swansea University) the SocRSE conference. 
+ \nRegistrations - both in person and remote - are now open. Members of 
+ the\nSociety should have received a coupon code for a discount. 
+ Contact\n<membership@society-rse.org> if you don't have it\, but are a 
+ fully paid-up\nmember. Note: This discount also applies to people 
+ attending remotely.\nIt's worth joining the Society for the in person 
+ conference discount\nalone!\nConference registration is here: 
+ <https://register.oxfordabstracts.com/event/4430>. \nThe Call for 
+ Volunteers remains open: <https://rsecon23.society-
+ rse.org/volunteers/>.\n\nAlso\, if you can\, please help us find 
+ organisations willing to sponsor the\nconference 
+ <https://rsecon23.society-rse.org/sponsorship-packages-for-rsecon23/> 
+ -\nperhaps the very organisation you work for?
+LOCATION:Swansea University (Remote available)
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230627T100000
+DURATION:PT1H
+SUMMARY:18th HiRSE Seminar - Neil Chue Hong: Can Software Metrics Improve 
+ Software Quality?
+UID:008b7a4c-9c7e-49cb-adc9-684356c91981@008b.org
+DESCRIPTION:Software quality in computational science and engineering can 
+ be interpreted in two ways: does the software implement the algorithm or 
+ simulate the phenomenon as expected\, and does it perform as expected i.e.
+  does it scale\, is it maintainable\, is it secure?\n\nSoftware metrics 
+ are the degree to which a software system possesses some relevant 
+ property. Many software metrics are defined as quantitative measurements 
+ based on the analysis of source code. Others\, such as those being 
+ developed by the CHAOSS initiative\, focus on measuring the ability of a 
+ project to deliver software that meets various criteria\, such as 
+ community health or development efficiency.\n\nA key question is how 
+ useful software metrics are in improving software quality when applied to 
+ development in computational science and engineering\, which can differ 
+ from software engineering in other areas because of evolving or unclear 
+ requirements\, deployment to large-scale systems and architectures\, and 
+ focus on performance.\n\nI will consider which types of software metric 
+ might benefit researcher-developers and research software engineers 
+ working in computational science and engineering. Can useful metrics be 
+ identified by considering the differences in the way that software is 
+ developed these fields?
+LOCATION:The talk will be held online. The connection details will be 
+ posted on a variety on channels shortly before the event (see 
+ <https://www.helmholtz-hirse.de/series/2023_06_27-seminar_18.html> for a 
+ list).
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230704T093000
+DURATION:PT6H30M
+SUMMARY:Educating Engineers for Safe AI Workshop (Cambridge)
+UID:d0f9f6ab-e56d-4cec-80e7-fd3fc5c542f7@d0f9.org
+DESCRIPTION:The Alan Turing Institute\, Edinburgh\, Newcastle\, Cambridge 
+ and UCL Universities are organising a series of workshops to discuss 
+ Educating Engineers for Safe AI.\n\nWe are seeking participants in this 
+ workshop series who are:\n\n- AI Engineers\, Data Scientists\, Systems 
+ Engineers\, ML-Ops\, Research Software Engineers\, Site Reliability 
+ Engineers and more\, working in the implementation of AI systems OR\n- 
+ Academics and other experts working in areas related to Safe\, Ethical\, 
+ Reliable and Trustworthy Machine Learning and Artificial Intelligence 
+ OR\n- Academics and other experts working in professional education\, 
+ CPD\, and related areas\, interested in developing materials related to 
+ safe AI for professional audiences.\nThe workshops consist of two regional
+  nonresidential satellite workshops in Cambridge (4th July) and in 
+ Edinburgh (29th June)\, and a final residential workshop in Newcastle on 
+ the 15th and 16th August.\n\nThe purpose of the workshop series is to 
+ develop a roadmap toward the creation of a syllabus and set of 
+ professional education materials\, targeted at software and systems 
+ engineers\, so that they can be empowered to champion the creation of 
+ safe\, ethical and trustworthy AI in their workplaces. Developers and 
+ engineers\, appropriately empowered and skilled\, are uniquely placed to 
+ ensure that the systems they build are done so according to emerging 
+ ethical best practice. These materials will become part of The Turing Way 
+ project.
+LOCATION:Downing College\, Regent Street\, Cambridge CB2 1DQ
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230926T113000
+DURATION:P3D
+SUMMARY:un-deRSE23 - Unconference for Research Software Engineering in 
+ Germany
+UID:64d06056-dc23-4d19-ba63-2a175cceeb3b@64d0.org
+DESCRIPTION:First ever unconference for Research Software Engineering in 
+ Germany
+LOCATION:Dornburger Schlösser\, Jena\, Germany
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230721T160000
+DURATION:PT1H
+SUMMARY:UCL Technical Social - Wed Jun 21 2023 - Jörg Saßmannshausen
+UID:8bbab8c3-6e1d-4011-b94f-1368d9d4df89@8bba.org
+DESCRIPTION:How to install high-performant software on a High Performance 
+ Cluster?\n\nSoftware installation on a High Performance Cluster (HPC) is 
+ different from the usual software installation on a desktop \ncomputer.In 
+ order to get the best performance out of the very expensive hardware\, it 
+ is best to compile software from source\, \nrather than using pre-compiled
+  binaries. This sounds often easier than it actually is. One good example 
+ is Basic Linear Algebra \nSubprograms (BLAS) [1]: A generic installation 
+ will only deliver a very low performance. Optimising the compile process 
+ will \ndeliver more performance. However\, with the sheer amount of 
+ different CPUs around\, testing it for each new build with a new 
+ \ncompiler is time consuming.\n\nThe solution here is to fall back what 
+ others have done\, improve on it if possible and contribute back to the 
+ community.\n\nOne such an example is EasyBuild [2]: software which is 
+ installing high-performant scientific software on HPC clusters 
+ \nautomatically.\n\nThe talk will take you through an often a bit 
+ personally journey of scientific software installation\, without too much 
+ of technical \njargon. It is aimed for scientists who are installing 
+ software\, or write their own code. Equally\, researchers who are more 
+ \nexperienced in software installation might learn something new as well.
+LOCATION:Malet Place Engineering Building 1.04 Malet Place Engineering 
+ Building 1.04 London WC1E 7JE
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230713T080000
+DURATION:PT1H
+SUMMARY:RSE Asia Community Call
+UID:207e7b08-b329-4598-848b-fa094f42b049@207e.org
+DESCRIPTION:An opportunity for people who work with or manage (research) 
+ software to meet and discuss challenges and solutions\, share skills\, 
+ opportunities\, and resources.\nJoin this call if you: want to learn about
+  research software engineering\, develop software for research\, mostly do
+  coding or software developing in a research group\, are a doctoral or 
+ postdoctoral researcher who mostly develops software\, have build software
+  while doing research\, and/or want to join the emerging research software
+  engineering community in Asia.
+LOCATION:Online
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230817T080000
+DURATION:PT1H
+SUMMARY:RSE Asia Community Call (August 2023)
+UID:494caba4-48e7-4f28-aeb4-9770f1e4981f@494c.org
+DESCRIPTION:An opportunity for people who work with or manage (research) 
+ software to meet and discuss challenges and solutions\, share skills\, 
+ opportunities\, and resources.\nJoin this call if you: want to learn about
+  research software engineering\, develop software for research\, mostly do
+  coding or software developing in a research group\, are a doctoral or 
+ postdoctoral researcher who mostly develops software\, have build software
+  while doing research\, and/or want to join the emerging research software
+  engineering community in Asia.
+LOCATION:Online
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230921T080000
+DURATION:PT1H
+SUMMARY:RSE Asia Community Call (September 2023)
+UID:6922aefb-d96d-46c6-84ba-d5507c67945f@6922.org
+DESCRIPTION:An opportunity for people who work with or manage (research) 
+ software to meet and discuss challenges and solutions\, share skills\, 
+ opportunities\, and resources.\nJoin this call if you: want to learn about
+  research software engineering\, develop software for research\, mostly do
+  coding or software developing in a research group\, are a doctoral or 
+ postdoctoral researcher who mostly develops software\, have build software
+  while doing research\, and/or want to join the emerging research software
+  engineering community in Asia.
+LOCATION:Online
+DTSTAMP:20230714T022814Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=/ics.py/2020.1/Europe/London:20230711T100000
+DURATION:PT1H
+SUMMARY:DiveRSE Seminar: Numbers Game
+UID:76b77c8e-a201-4fa9-8ca3-5cbe93b3eb58@76b7.org
+DESCRIPTION:Our next speaker in the DiveRSE series is Mariann (Maz) 
+ Hardey\, Professor of Digital Culture\, Technology and Business at Durham 
+ University Business School. Mariann is also a member of Advanced Research 
+ Computing (ARC) at Durham\, where her role supports widening participation
+  and accessibility in computing. She is passionate about self-development 
+ and learning\, with a focus on representation among business leaders and 
+ practitioners in the technology sector. One of her latest books “The 
+ Culture of Women in Tech” forms part of the Master Class curriculum of the
+  UK Government Digital Service to promote employment reform and 
+ inclusivity. Mariann has been researching and working with tech 
+ organisations for over twenty years. In her talk\, Mariann will focus on 
+ the ‘Whoddunit’ behind Equality\, Diversity and Inclusion (EDI/DEI) in the
+  tech workplace. To best serve these fundamental principles\, one must 
+ first understand the mechanics behind it.
+LOCATION:Online
+DTSTAMP:20230714T022814Z
+END:VEVENT
+NAME:RSE Events
+X-WR-CALNAME:RSE Events
+END:VCALENDAR
