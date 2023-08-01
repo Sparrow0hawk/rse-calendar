@@ -224,3 +224,24 @@ events:
     duration:
       minutes: 60
     event_url: https://diverse-rse.github.io/events/2023-07-11
+  - summary: Model-Driven Engineering Network (MDENet) Workshop on Research Software
+    description: |
+      On October 31st, MDENet, the EPSRC-funded network on Model-Driven
+      Engineering, is holding a thematic workshop on Research Software at King’s
+      College London.
+
+      This one-day event aims to improve mutual understanding of challenges in
+      Research Software and opportunities for Model-Driven Engineering to help
+      address them.
+
+      Here is the call for expressions of interest:
+      <https://mde-network.com/wp-content/uploads/2023/07/Call-for-EOI-workshop-Research-Software.pdf>
+      and the application form:
+      <https://forms.office.com/e/YK53MD1hrv>
+      There is also a travel and accommodation support fund of up to £300, that
+      you can find here: <https://forms.office.com/e/S9pgbWZ6qU>
+    location: King's College London
+    begin: 2023-10-31
+    duration:
+      days: 1
+    event_url: https://mde-network.com/wp-content/uploads/2023/07/Call-for-EOI-workshop-Research-Software.pdf
