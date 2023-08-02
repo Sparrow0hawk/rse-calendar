@@ -4,15 +4,19 @@ import os
 import datetime
 import argparse
 import logging
+from dateutil.parser import parse
 
 LOG_LEVEL = os.environ.get("LOGLEVEL")
 logging.basicConfig(level=LOG_LEVEL)
 
 
 def main(override=False):
+
+    NoDatesSafeLoader.remove_implicit_resolver('tag:yaml.org,2002:timestamp')
+
     with open("_data/main.yaml", "r") as open_file:
         try:
-            data = yaml.safe_load(open_file)
+            data = yaml.load(open_file, Loader = NoDatesSafeLoader)
 
         except yaml.YAMLError as err:
             print(err)
@@ -30,12 +34,14 @@ def main(override=False):
 
     for event in data:
 
+        event_date = parse(event["begin"])
+
         # calculate a post end date 
-        postEndDate = event["begin"] + datetime.timedelta(**event["duration"])
+        postEndDate = event_date + datetime.timedelta(**event["duration"])
 
         if postEndDate >= today:
             filename = (
-                str(event["begin"].strftime("%Y-%m-%d"))
+                str(event_date.strftime("%Y-%m-%d"))
                 + "-"
                 + event["summary"].strip().replace(" ", "_")
             )
@@ -51,6 +57,30 @@ def main(override=False):
                     output_file.write(rendered)
 
     return
+
+class NoDatesSafeLoader(yaml.SafeLoader):
+    """
+    Copied under CC-BY-SA 3.0
+    https://stackoverflow.com/a/37958106/10651182
+    """
+    @classmethod
+    def remove_implicit_resolver(cls, tag_to_remove):
+        """
+        Remove implicit resolvers for a particular tag
+
+        Takes care not to modify resolvers in super classes.
+
+        We want to load datetimes as strings, not dates, because we
+        go on to serialise as json which doesn't have the advanced types
+        of yaml, and leads to incompatibilities down the track.
+        """
+        if not 'yaml_implicit_resolvers' in cls.__dict__:
+            cls.yaml_implicit_resolvers = cls.yaml_implicit_resolvers.copy()
+
+        for first_letter, mappings in cls.yaml_implicit_resolvers.items():
+            cls.yaml_implicit_resolvers[first_letter] = [(tag, regexp) 
+                                                         for tag, regexp in mappings
+                                                         if tag != tag_to_remove]
 
 
 if __name__ == "__main__":
