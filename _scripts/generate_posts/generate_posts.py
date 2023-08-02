@@ -4,6 +4,7 @@ import os
 import datetime
 import argparse
 import logging
+from dateutil.parser import parse
 
 LOG_LEVEL = os.environ.get("LOGLEVEL")
 logging.basicConfig(level=LOG_LEVEL)
@@ -33,12 +34,14 @@ def main(override=False):
 
     for event in data:
 
+        event_date = parse(event["begin"])
+
         # calculate a post end date 
-        postEndDate = event["begin"] + datetime.timedelta(**event["duration"])
+        postEndDate = event_date + datetime.timedelta(**event["duration"])
 
         if postEndDate >= today:
             filename = (
-                str(event["begin"].strftime("%Y-%m-%d"))
+                str(event_date.strftime("%Y-%m-%d"))
                 + "-"
                 + event["summary"].strip().replace(" ", "_")
             )
