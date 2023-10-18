@@ -271,7 +271,7 @@ events:
       NFDI4 Earth (<https://nfdi4earth.de/>), OPTIMETA (<https://projects.tib.eu/optimeta>), and CODECHECK (<https://codecheck.org.uk/>).
     location: West Cambridge and online via Zoom
     begin: 2023-10-19 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: "Cambridge RSE Seminar - Fortran 77: It's really C with none of the safeguards - Simon Clifford"
     description: |  
@@ -288,7 +288,7 @@ events:
       
     location: West Cambridge and online via Zoom
     begin: 2023-10-26 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: Cambridge RSE Seminar - Widening Participation in the R Project - Heather Turner
     description: |
@@ -309,7 +309,7 @@ events:
       and other fundamental open source projects.
     location: West Cambridge and online via Zoom
     begin: 2023-11-02 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: Cambridge RSE Seminar - Sustainability at The Netherlands eScience Center - Niels Drost
     description: |
@@ -340,7 +340,7 @@ events:
       the years, mostly in the fields of Climate Science and Hydrology.
     location: West Cambridge and online via Zoom
     begin: 2023-11-09 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: Cambridge RSE Seminar - Teaching RSE for Digital Humanities - Mary Chester-Cadwell
     description: |
@@ -359,7 +359,7 @@ events:
       where this might take us next. 
     location: West Cambridge and online via Zoom
     begin: 2023-11-16 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: Cambridge RSE Seminar - How not to write a convection parameterisation code? - Mike Whitall
     description: |
@@ -398,5 +398,5 @@ events:
       'future proof' way? 
     location: West Cambridge and online via Zoom
     begin: 2023-11-23 13:00:00
-    duration: { hour: 1 }
+    duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
