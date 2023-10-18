@@ -245,3 +245,158 @@ events:
     duration:
       days: 1
     event_url: https://mde-network.com/wp-content/uploads/2023/07/Call-for-EOI-workshop-Research-Software.pdf
+  - summary: Cambridge RSE Seminar - Code Execution during peer review with CODECHECK - Daniel Nust
+    description: |
+      Data and software are the foundation for a vast variety and volume of computational
+      research in all scientific disciplines. This is how we make sense of small and huge
+      datasets using everything from one-off scripts to high-performance computing
+      infrastructures. Nowadays, most of these works are eventually presented to a
+      scientific community in form of a paper for the recognition of research outputs and
+      career advancement. Research papers are increasingly accompanied by data and
+      software to ensure transparency, reproducibility, and reusability. This change
+      is driven by shifting community practice as well as by publisher guidelines.
+      However, the actual inspection of these building blocks is not a common part
+      of the publication and peer review process. The CODECHECK initiative tries to make
+      code execution standard practice in peer review using a particular focus and a set
+      of principles. We present variants of CODECHECK and highlight the possibilities
+      for research software engineers to participate in academic peer review as codecheckers.
+      Furthermore, we demonstrate the AGILE conference’s Reproducibility Review as a
+      concrete implementation of CODECHECK . The Reproducible AGILE initiative
+      demonstrates how good scientific and development practices can be encouraged
+      and spread through communication and collaboration.
+
+      Daniel is a research software engineer and postdoc at the Chair of Geoinformatics,
+      TU Dresden, Germany. He develops tools for open and reproducible geoscientific
+      research and is a proponent for open scholarship and reproducibility in the projects
+      NFDI4 Earth (<https://nfdi4earth.de/>), OPTIMETA (<https://projects.tib.eu/optimeta>), and CODECHECK (<https://codecheck.org.uk/>).
+    location: West Cambridge and online via Zoom
+    begin: 2023-10-19 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
+  - summary: "Cambridge RSE Seminar - Fortran 77: It's really C with none of the safeguards - Simon Clifford"
+    description: |  
+      Fortran was summoned by IBM ’s warlocks nearly 70 years ago. So should we still be
+      interested in this crusty old programming language?
+      Come with crusty old Simon as he opens the vault and delves into some
+      distinctly not-modern Fortran.
+
+      GASP as we use pointers in a language that doesn’t have pointers.
+
+      THRILL as we cast between types without knowing we’re doing it.
+      
+      GROAN as we make whitespace important years before Python thought of it.
+      
+    location: West Cambridge and online via Zoom
+    begin: 2023-10-26 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
+  - summary: Cambridge RSE Seminar - Widening Participation in the R Project - Heather Turner
+    description: |
+      The R Project is over 20 years old, but its future is not secure – many of the
+      R Core Team are nearing or post retirement and there are not enough new contributors
+      to sustain the work. In this talk, I will present a number of initiatives, fostered
+      under my EPSRC RSE Fellowship: ‘Sustainability and EDI (Equality, Diversity and
+      Inclusion) in the R Project’, that are designed to encourage and train a new, more
+      diverse, generation of contributors.
+
+      The initiatives vary from regular support on the R Contributor Slack and in R
+      Contributor Office Hours, to one-off events aimed at new contributors such as a
+      Collaboration Campfire series and a Bug BBQ . I will report back on the recent R
+      Project Sprint 2023, hosted at Warwick University, which brought members of the R
+      Core Team together with both novice and experienced contributors to work in
+      collaboration – the first event of this kind in the R community. I will discuss how
+      we hope to keep the momentum going and how RSEs might contribute to the R Project
+      and other fundamental open source projects.
+    location: West Cambridge and online via Zoom
+    begin: 2023-11-02 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
+  - summary: Cambridge RSE Seminar - Sustainability at The Netherlands eScience Center - Niels Drost
+    description: |
+      The Netherlands eScience Center is the Dutch national expertise center for research
+      software. We work with researchers from across the Netherlands and beyond, in all
+      fields of research on creating and using research software, as well as building
+      capacity through teaching, fellowships, and other community efforts.
+
+      We are passionate about making software sustainable (as in durable) so that it can
+      be used by as many researchers as possible. To facilitate this we created the
+      Research Software Directory (<https://research-software-directory.org/>), a service
+      to show the impact of research software.
+
+      A re-occurring theme in our projects is that of sustainability (as in climate change).
+      Over the years we have contributed to a number of projects and software related to
+      sustainability, including ESM Valtool (<https://esmvaltool.org/>), software supporting
+      the evaluation of Earth system models, and used in the latest IPCC report.
+
+      In my presentation I will explain the structure of the eScience Center and how it
+      came to be, introduce the research software directory, and provide some examples
+      of projects in the area of sustainability we contribute to.
+
+      Niels Drost is a Research Software Engineer from the Netherlands. He is currently
+      the Programme Manager for Environment and Sustainability at the Netherlands eScience
+      Center. He has a background in Computer Science in the area of High Performance
+      Computing, helped establish the Dutch chapter of the RSE community (NL-RSE,
+      <https://nl-rse.org/>), and has worked on many different research projects over
+      the years, mostly in the fields of Climate Science and Hydrology.
+    location: West Cambridge and online via Zoom
+    begin: 2023-11-09 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
+  - summary: Cambridge RSE Seminar - Teaching RSE for Digital Humanities - Mary Chester-Cadwell
+    description: |
+      Cambridge Digital Humanities (CDH) runs a variety of learning opportunities that
+      introduce RSE practices to students, researchers and staff in the arts, humanities,
+      archives, libraries and museums. The CDH Learning programme offers a 'Best Practices
+      in Coding for Digital Humanities' series and runs a RSE Methods Fellows programme
+      for RSEs (of any discipline) to teach workshops and prepare online tutorials.
+      CDH also hosts a Digital Humanities (DH) RSE Summer School (together with several
+      partner institutions) with the aim of introducing those who code in research to
+      beginner and intermediate RSE practices. This is an exciting time for RSE in DH
+      and these recent initiatives are still in the process of active development. In
+      this talk I will discuss some of the challenges and opportunities of making RSE
+      relevant to the various types of research under the ‘DH umbrella’, how best to
+      engage DH scholars and RSEs from other disciplines in this joint endeavour, and
+      where this might take us next. 
+    location: West Cambridge and online via Zoom
+    begin: 2023-11-16 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
+  - summary: Cambridge RSE Seminar - How not to write a convection parameterisation code? - Mike Whitall
+    description: |
+      Convection parameterisations are a crucial element of global atmospheric models.
+      They simulate the vertical transport of heat, moisture and momentum by convective
+      clouds, and associated rainfall. The majority of Tropical rainfall is associated
+      with these clouds, which are too small-scale to explicitly resolve on the model’s
+      grid and so need to be parameterised.
+
+      Most global atmosphere models use a so-called 'mass-flux' form of convection
+      parameterisation, which consists of a diagnostic vertical integral to compute the
+      properties of the clouds and the amount of heat / moisture entrained / detrained
+      at each height. The calculations in a given vertical column of model grid-points
+      are completely independent of those in other neighbouring columns, so it would be
+      simplest to write the code so that it only considers a single column at a time.
+      However, since we are performing a vertical integral the calculations at a given
+      height within each column depend on the results from those calculations at the
+      level below, so the scheme must be structured in a vertically sequential manner
+      considering a single height-level at a time.
+
+      Considering only a single column and a single height-level at a time amounts to
+      computing only a single grid-point at a time. On CPU architectures, this is
+      extremely inefficient; far greater computation speeds are obtained by doing many
+      identical calculations simultaneously, via vectorisation. Another challenge/opportunity
+      is the sparsity of the required calculations, since convective clouds only occupy a
+      small fraction of the atmosphere’s volume.
+
+      In this talk I discuss routes to exploiting both vectorisation and shared memory
+      parallelisation, and how to make efficient use of memory given the sparsity, in the
+      comorph convection parameterisation fortran code currently under development at the
+      Met Office.
+
+      However, current and future changes in software and HPC architectures (such as GPUs)
+      may radically change the optimal code structure. Is there any way to adapt our
+      convection code to these changes without completely rewriting it, or write it in a
+      'future proof' way? 
+    location: West Cambridge and online via Zoom
+    begin: 2023-11-23 13:00:00
+    duration: { hours: 1 }
+    event_url: "https://talks.cam.ac.uk/show/index/69831"
