@@ -1,0 +1,4 @@
+https://github.com/Sparrow0hawk/git-calendar/archive/main.zip
+https://github.com/ics-py/ics-py/archive/refs/heads/main.zip
+jinja2
+pyyaml
