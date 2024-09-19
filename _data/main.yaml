@@ -274,7 +274,7 @@ events:
     duration: { hours: 1 }
     event_url: "https://talks.cam.ac.uk/show/index/69831"
   - summary: "Cambridge RSE Seminar - Fortran 77: It's really C with none of the safeguards - Simon Clifford"
-    description: |  
+    description: |
       Fortran was summoned by IBM ’s warlocks nearly 70 years ago. So should we still be
       interested in this crusty old programming language?
       Come with crusty old Simon as he opens the vault and delves into some
@@ -283,9 +283,9 @@ events:
       GASP as we use pointers in a language that doesn’t have pointers.
 
       THRILL as we cast between types without knowing we’re doing it.
-      
+
       GROAN as we make whitespace important years before Python thought of it.
-      
+
     location: West Cambridge and online via Zoom
     begin: 2023-10-26 13:00:00
     duration: { hours: 1 }
@@ -403,13 +403,21 @@ events:
 
   - summary: Software Performance Best Practices SIG - Initial Meeting
     description: |
-        The founding meeting of a new special interest group focused around
-        the topic of accessible software performance best practices (name tdb).
-        This meeting will allow attendees to introduce themselves,
-        the initial terms of reference to be drafted (to be submitted to society RSE),
-        and attendees to put themselves forwards as members of the steering group. 
-        Draft Agenda <https://docs.google.com/document/d/1LA5j4pWqAYIvHmvMq9tPAGypMB-P9BDlXoetBNOon8k/edit?usp=sharing>
+      The founding meeting of a new special interest group focused around
+      the topic of accessible software performance best practices (name tdb).
+      This meeting will allow attendees to introduce themselves,
+      the initial terms of reference to be drafted (to be submitted to society RSE),
+      and attendees to put themselves forwards as members of the steering group. 
+      Draft Agenda <https://docs.google.com/document/d/1LA5j4pWqAYIvHmvMq9tPAGypMB-P9BDlXoetBNOon8k/edit?usp=sharing>
     location: Google Meet (online)
     begin: 2024-09-24 15:00:00
     duration: { minutes: 60 }
     event_url: "https://www.google.com/calendar/event?eid=MGtsNTZyMmwzcTYwbjFoZWhiZ2ljN2VlZ2Mgcm9iZXJ0LmNoaXNob2xtQHNoZWZmaWVsZC5hYy51aw"
+  - summary: Test issue
+    description: |
+      Exciting thing
+    location: Google Meet (online)
+    begin: 2024-09-24 15:00:00
+    duration:
+      minutes: 60
+    event_url: https://www.alexjcoleman.me/rse-calendar
